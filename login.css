@@ -6,6 +6,13 @@
     font-weight: 300;
 }
 
+body {
+    min-height: 100vh;
+    color: white;
+    overflow-x: hidden;
+    font-size: 1.3rem;
+}
+
 button {
     border: none;
     font-size: inherit;
@@ -13,12 +20,6 @@ button {
 
 button:hover {
     cursor: pointer;
-}
-
-body {
-    min-height: 100vh;
-    color: white;
-    overflow-x: hidden;
 }
 
 .header {
@@ -45,7 +46,7 @@ body {
 
 .header__h1 {
     padding: 1rem;
-    font-family:'Tangarine';
+    font-family: 'Tangarine';
     font-weight: 600;
 }
 
@@ -54,7 +55,7 @@ body {
     flex-shrink: 0;
 }
 
-.carousel img{
+.carousel img {
     position: relative;
     top: 20vh;
     left: 5vh;
@@ -71,12 +72,15 @@ body {
     0% {
         transform: translateX(0%);
     }
+
     45% {
         transform: translateX(-100%);
     }
+
     90% {
         transform: translateX(-200%);
     }
+
     100% {
         transform: translateX(0%);
     }
@@ -129,7 +133,7 @@ body {
     /* background-color: white; */
 }
 
-.box__h2 button{
+.box__h2 button {
     background-color: rgb(0, 157, 255);
     color: white;
     padding: 0.5rem 0.8rem;
@@ -159,24 +163,32 @@ body {
 .card form input {
     display: block;
     margin: 0 12%;
-    padding-left: 1rem;
+    padding: 1rem;
     border: 1px solid black;
     align-items: center;
     width: 75%;
-    height: 2rem;
+    height: 3rem;
     border-radius: 10rem;
+    font-size: 1.2rem;
+
 }
 
-.login__button, .signup__button {
+.login__button,
+.signup__button {
     color: white;
     background-color: rgb(0, 157, 255);
     border: 1px solid rgba(255, 255, 255, 0.5);
     width: 80%;
-    height: 2rem;
+    height: 3rem;
     border-radius: 10px;
     position: relative;
     left: 10%;
     bottom: 20%;
+}
+
+.login__button:hover,
+.signup__button:hover {
+    border-radius: 1.5rem;
 }
 
 .footer {
