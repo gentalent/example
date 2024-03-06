@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img src="logo.jpeg" alt="" />
+      <h1 class="header__h1">Atlanta Mall</h1>
+    </header>
+    <main class="main">
+      <div class="carousel">
+        <img class="img1" src="background2.jpeg" alt="" />
+        <img class="img2" src="background.jpeg" alt="" />
+        <img class="img3" src="background2.jpeg" alt="" />
+      </div>
+      <div class="triangle"></div>
+
+      <div class="outer__box">
+        <div class="box">
+          <h2 class="box__h2">
+            <button id="login__button" onclick="login()">Login</button>
+            <button id="signup__button" onclick="signup()">SignUp</button>
+          </h2>
+          <div class="card form__login" id="form__login">
+            <form>
+              <p class="input">
+                <input
+                  type="text"
+                  id="login__username"
+                  name="login__username"
+                  placeholder="Username"
+                  required
+                  autofocus
+                />
+              </p>
+              <p class="input">
+                <input
+                  type="password"
+                  id="login__pass"
+                  name="login__pass"
+                  placeholder="Password"
+                  required
+                />
+              </p>
+              <p>
+                <button class="login__button" type="submit">Login</button>
+              </p>
+            </form>
+          </div>
+          <div class="card form__signup" id="form__signup">
+            <form>
+              <p class="input">
+                <input
+                  type="text"
+                  id="signup__name"
+                  name="signup__name"
+                  placeholder="Enter Your Name"
+                  required
+                  autofocus
+                />
+              </p>
+              <p class="input">
+                <input
+                  type="text"
+                  id="signup__username"
+                  name="signup__username"
+                  placeholder="Set Your Username"
+                  required
+                />
+              </p>
+              <p class="input">
+                <input
+                  type="password"
+                  id="signup__pass"
+                  name="signup__pass"
+                  placeholder="Set New Password"
+                  required
+                />
+              </p>
+              <p>
+                <button class="signup__button" type="submit">SignUp</button>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">&copy; Atlanta Mall. All Rights Reserved.</footer>
+    <script src="login.js"></script>
+  </body>
+</html>
