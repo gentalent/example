@@ -36,3 +36,15 @@ function signup() {
     ele2.style.backgroundColor = "rgb(0,157,255)";
     ele2.style.color = "white";
 }
+
+const login_details = document.querySelector("#login__button");
+
+login_details.addEventListener('click', (e) => {
+    e.preventDefault();
+    const user = document.querySelector("#login_username").value;
+    const pass = document.querySelector("#login_pass").value;
+
+    const details = { username: user, password: pass };
+
+    module.export = details;
+})
