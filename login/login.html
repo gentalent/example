@@ -28,12 +28,12 @@
             <button id="signup__button" onclick="signup()">SignUp</button>
           </h2>
           <div class="card form__login" id="form__login">
-            <form>
+            <form action="/checkData" method="GET">
               <p class="input">
                 <input
                   type="text"
                   id="login__username"
-                  name="login__username"
+                  name="username"
                   placeholder="Username"
                   required
                   autofocus
@@ -43,7 +43,7 @@
                 <input
                   type="password"
                   id="login__pass"
-                  name="login__pass"
+                  name="password"
                   placeholder="Password"
                   required
                 />
@@ -54,12 +54,12 @@
             </form>
           </div>
           <div class="card form__signup" id="form__signup">
-            <form>
+            <form action="/insertData" method="POST">
               <p class="input">
                 <input
                   type="text"
                   id="signup__name"
-                  name="signup__name"
+                  name="name"
                   placeholder="Enter Your Name"
                   required
                   autofocus
@@ -69,7 +69,7 @@
                 <input
                   type="text"
                   id="signup__username"
-                  name="signup__username"
+                  name="username"
                   placeholder="Set Your Username"
                   required
                 />
@@ -78,7 +78,7 @@
                 <input
                   type="password"
                   id="signup__pass"
-                  name="signup__pass"
+                  name="password"
                   placeholder="Set New Password"
                   required
                 />
