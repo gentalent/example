@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.header {
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(0, 157, 255);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.header .logo img {
+    height: 10.5vh;
+}
+
+.header .links {
+    position: absolute;
+    left: 30%;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.header .links a {
+    color: #333;
+    transition: color 0.3s ease;
+    text-decoration: none;
+    color: white;
+}
+
+.header .links a:hover {
+    color: black;
+}
+
+.header .search {
+    display: flex;
+    align-items: center;
+}
+
+.search__bar {
+    border: 1px solid #ccc;
+    border-radius: 2rem;
+    padding: 0.4rem 0.8rem;
+    margin-right: 1rem;
+    font-size: 1rem;
+    position: absolute;
+    right: 4rem;
+}
+
+.profile img {
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    right: 0.5rem;
+    top: 1.8vh;
+}
+
+.discover_more {
+    margin: 2rem 0;
+    width: 100vw;
+    height: 40vh;
+    background-image: url('img/store_bg.jpeg');
+    background-size: cover;
+}
+
+.discover_more .text {
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    font-size: 4rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.carousel {
+    display: flex;
+    flex-shrink: 0;
+    margin: 5rem 0 0 0;
+}
+
+.carousel img {
+    position: relative;
+    left: 5vh;
+    width: 80%;
+    height: auto;
+    animation: img_animation 12s infinite ease-in-out;
+    object-fit: fill;
+    margin-right: 0.5rem;
+}
+
+.carousel img:not(:first-child) {
+    transform: translateX(100%);
+}
+
+@keyframes img_animation {
+    0% {
+        transform: translateX(0%);
+    }
+
+    30% {
+        transform: translateX(-100%);
+    }
+
+    60% {
+        transform: translateX(-200%);
+    }
+
+    90% {
+        transform: translateX(-300%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 5rem 12rem;
+}
+
+.box {
+    width: 20%;
+    margin-bottom: 30px;
+    margin-right: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    aspect-ratio: 1;
+}
+
+.box:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bottom {
+    padding: 5rem 2rem 2rem 2rem;
+}
+
+.bottom p img {
+    width: 95.5vw;
+}
+
+.bottom .row {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5rem;
+}
+
+.bottom .row .bottom-col {
+    width: 25%;
+}
+
+.bottom .row .bottom-col h4 {
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.bottom .row .bottom-col ul li {
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+.bottom .row .bottom-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 300;
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+.bottom .row .bottom-col ul li a:hover {
+    padding-left: 7px;
+}
+
+.bottom .row .bottom-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 40%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+    ;
+}
+
+.bottom .row .bottom-col .social-links a img {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    filter: grayscale(100%);
+}
+
+.bottom .row .bottom-col .social-links a img:first-child:hover {
+    filter: none;
+}
+
+.footer {
+    background-color: rgb(0, 157, 255);
+    display: flex;
+    padding: 0.7rem;
+    justify-content: center;
+    height: 3rem;
+    color: white;
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQs</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png" />
+    <link rel="stylesheet" href="faq.css" />
+  </head>
+  <body>
+    <header>
+      <h1>FAQs</h1>
+    </header>
+
+    <div class="faq-container">
+      <div class="question">
+        <h3>What products are available at the technical store?</h3>
+        <div class="answer">
+          <p>
+            The technical store offers a variety of electronic gadgets such as
+            smartphones, laptops, tablets, cameras, and accessories like
+            headphones, chargers, and more.
+          </p>
+        </div>
+      </div>
+
+      <div class="question">
+        <h3>What movies are currently playing at the theater?</h3>
+        <div class="answer">
+          <p>
+            We show a range of movies including the latest blockbusters,
+            family-friendly films, and indie flicks. You can check the current
+            showtimes and movie listings on our website or at the box office.
+          </p>
+        </div>
+      </div>
+
+      <div class="question">
+        <h3>What types of clothing brands are available for shopping?</h3>
+        <div class="answer">
+          <p>
+            We have a diverse selection of clothing brands catering to various
+            styles and preferences. From casual wear to formal attire, you'll
+            find popular brands as well as boutique labels to suit your fashion
+            needs.
+          </p>
+        </div>
+      </div>
+
+      <div class="question">
+        <h3>What dining options are available in the food court?</h3>
+        <div class="answer">
+          <p>
+            Our food court offers a wide array of cuisine options ranging from
+            fast food favorites like burgers and pizza to international delights
+            such as Asian stir-fries, Mediterranean wraps, and more. There's
+            something to satisfy every craving!
+          </p>
+        </div>
+      </div>
+
+      <div class="question">
+        <h3>How is the quality and hygiene of the food in the food court?</h3>
+        <div class="answer">
+          <p>
+            We prioritize the quality and hygiene of our food offerings. Our
+            vendors adhere to strict cleanliness standards, and we regularly
+            inspect their facilities to ensure compliance. Additionally, we
+            source fresh ingredients to maintain high-quality standards in our
+            food court.
+          </p>
+        </div>
+      </div>
+
+      <div class="question">
+        <h3>What are the opening hours of the technical store?</h3>
+        <div class="answer">
+          <p>
+            The technical store is open from Monday to Saturday, from 9:00 AM to
+            8:00 PM. On Sundays, our opening hours are from 10:00 AM to 6:00 PM.
+          </p>
+        </div>
+      </div>
+
+      <div class="question">
+        <h3>
+          Do you offer warranty for products purchased from the technical store?
+        </h3>
+        <div class="answer">
+          <p>
+            Yes, we provide a standard manufacturer's warranty for all products
+            sold in our store. The duration and terms of the warranty may vary
+            depending on the product, and details will be provided at the time
+            of purchase.
+          </p>
+        </div>
+      </div>
+
+      <div class="question">
+        <h3>
+          Is there a return or exchange policy for items bought at the technical
+          store?
+        </h3>
+        <div class="answer">
+          <p>
+            We offer a hassle-free return and exchange policy within 30 days of
+            purchase for most products, provided they are in their original
+            condition with the packaging intact. Please refer to our return
+            policy for more details.
+          </p>
+        </div>
+      </div>
+
+      <div class="question">
+        <h3>
+          Are there any discounts or promotions available at the technical
+          store?
+        </h3>
+        <div class="answer">
+          <p>
+            Yes, we regularly offer discounts and promotions on various
+            products. You can stay updated on our latest deals by subscribing to
+            our newsletter or following us on social media.
+          </p>
+        </div>
+      </div>
+
+      <div class="question">
+        <h3>Is there parking available near the shopping center?</h3>
+        <div class="answer">
+          <p>
+            Yes, we provide ample parking space for customers visiting our
+            shopping center. Our parking facilities are conveniently located
+            near the entrance for easy access.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy;Atlanta Mall. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+      document.querySelectorAll(".question").forEach((question) => {
+        question.addEventListener("click", () => {
+          const answer = question.querySelector(".answer");
+          answer.style.maxHeight = answer.style.maxHeight
+            ? null
+            : answer.scrollHeight + "px";
+        });
+      });
+    </script>
+  </body>
+</html>

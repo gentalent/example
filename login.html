@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css" />
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png" />
+    <script defer src="login.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <img src="img/logo.jpeg" alt="" />
+      <h1 class="header__h1">Atlanta Mall</h1>
+    </header>
+    <main class="main">
+      <div class="carousel">
+        <img class="img1" src="img/login1.jpeg" alt="" />
+        <img class="img2" src="img/login2.jpeg" alt="" />
+        <img class="img3" src="img/login3.jpeg" alt="" />
+      </div>
+      <div class="triangle"></div>
+
+      <div class="outer__box">
+        <div class="box">
+          <h2 class="box__h2">
+            <button id="login" onclick="login()">Login</button>
+            <button id="signup" onclick="signup()">SignUp</button>
+          </h2>
+          <div class="card form__login" id="form__login">
+            <form action="/checkData" method="POST">
+              <p class="input">
+                <input
+                  type="text"
+                  id="login__username"
+                  name="username"
+                  placeholder="Username"
+                  required
+                  autofocus
+                />
+              </p>
+              <p class="input">
+                <input
+                  type="password"
+                  id="login__pass"
+                  name="password"
+                  placeholder="Password"
+                  required
+                />
+              </p>
+              <p>
+                <button class="login__button" type="submit">Login</button>
+              </p>
+            </form>
+          </div>
+          <div class="card form__signup" id="form__signup">
+            <form action="/insertData" method="POST">
+              <p class="input">
+                <input
+                  type="text"
+                  id="signup__name"
+                  name="name"
+                  placeholder="Enter Your Name"
+                  required
+                  autofocus
+                />
+              </p>
+              <p class="input">
+                <input
+                  type="text"
+                  id="signup__username"
+                  name="username"
+                  placeholder="Set Your Username"
+                  required
+                />
+              </p>
+              <p class="input">
+                <input
+                  type="password"
+                  id="signup__pass"
+                  name="password"
+                  placeholder="Set New Password"
+                  required
+                />
+              </p>
+              <p>
+                <button class="signup__button" type="submit">SignUp</button>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">&copy; Atlanta Mall. All Rights Reserved.</footer>
+  </body>
+</html>
