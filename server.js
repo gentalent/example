@@ -61,12 +61,10 @@ app.post('/checkData', async (req, res) => {
         const isPasswordMatch = await comparePassword(password, userDetails.password);
         if (isPasswordMatch) {
             res.sendFile(path.join(__dirname, 'home.html'));
-        } else {
-            res.status(401).send('Incorrect password');
         }
-    }
 
-})
+    }
+});
 
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
